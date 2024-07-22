@@ -7,7 +7,7 @@ export default function Navbar() {
         <a href="!#">Services</a>
         <a href="!#">Gallery</a>
     </div>
-    <div className="sidebar-btn">
+    <div className="sidebar-btn active">
         <div className="bar"> </div>
         <div className="bar"> </div>
         <div className="bar"> </div>

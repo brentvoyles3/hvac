@@ -72,10 +72,11 @@ a{
             }
         }
         .sidebar-btn{
-            height: 32px;
-            width: 35px;
+            height: 28px;
+            width: 30px;
             position: relative;
             .bar{
+                border-radius: 5px;
                 height: 6px;
                 width: 100%;
                 background-color: var(--text-color);
@@ -85,11 +86,28 @@ a{
                 }
                 &:nth-child(2){
                     top: 50%;
-                    transform: translateY(-50%);
+                    transform-origin: right;
+                    transform: scaleX(.8) translateY(-50%);
                 }
                 &:nth-child(3){
                     top: 100%;
-                    transform: translateY(-100%);
+                    transform-origin: right;
+                    transform: scaleX(1.1) translateY(-100%);
+                }
+            }
+            &.actiive{
+                .bar{
+                    transform-origin: center;
+                    top: 50%;
+                    &:nth-child(1){
+                        transform: translate(0, -50%) scale(1) rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        transform: scaleX(0) translateY(-50%);
+                    }
+                    &:nth-child(3){
+                        transform: translateY(0, -50%) scale(1) rotate(-45deg); 
+                    }
                 }
             }
         }
