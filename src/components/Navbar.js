@@ -10,7 +10,7 @@ export default function Navbar() {
         <a href="!#">Gallery</a>
     </div>
     {/* onClick not working...*/ }
-    <div onClick={() => setShowSidebar(!showSidebar)} className={showSidebar ? "sidebar-btn acative" : "sidebar-btn"}>
+    <div onClick={() => {setShowSidebar(!showSidebar)}} className={showSidebar ? "sidebar-btn active" : "sidebar-btn"}>
         <div className="bar"> </div>
         <div className="bar"> </div>
         <div className="bar"> </div>
