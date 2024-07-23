@@ -127,6 +127,7 @@ a{
         background-color: var(--background-color);
         box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2),
                     3px 0 5px var(--shadow-color);
+                    animation: getAnimationDuration(.33s) slideInLeft;
                     .sidebar-link{
                         display: block;
                         padding: .5em;
@@ -134,6 +135,12 @@ a{
                         margin-bottom: 1em;
                         color: var(--text-color);
                         font-size: 1.1em;
+                        animation: getAnimationDuration(.33s) slideInLeft forwards;
+                        @for $i from 1 through 3{
+                            &:nth-child(#{$i}){
+                                animation-delay: #{$i * .1}s;
+                            }
+                        }
                         &.active{
                             border-left-color: var(--primary-color);
                         }
@@ -152,6 +159,7 @@ a{
     padding-inline:15vw;
 }
 
+@import "partials/animations.scss";
 @media screen and (max-width: 768px){
     .navbar{
         .nav-links{
