@@ -44,6 +44,12 @@ a{
     }
 }
 
+.custom-image{  
+    background-color: red;
+    height: 0;
+    width: 100%;
+}
+
 @import "partials/navbar";
 
 .section {
@@ -56,11 +62,21 @@ a{
     }
     .info{
         color: var(--text-light);
-        font-size: 1.5em;
-        margin-bottom: .5em;
+        font-size: 1em;
+        letter-spacing: 1px;
+        line-height: 1;
+        margin-bottom: 1.25em;
     }
     .col{
         width: 50%;
+    }
+}
+
+.section.home{
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.75vw;
     }
 }
 
