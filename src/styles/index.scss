@@ -45,9 +45,16 @@ a{
 }
 
 .custom-image{  
-    background-color: red;
     height: 0;
     width: 100%;
+    position: relative;
+    img{
+        position: absolute;
+        top:0 ;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @import "partials/navbar";
