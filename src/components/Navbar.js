@@ -1,7 +1,7 @@
 import { useState }  from "react";
 import Sidebar from "./Sidebar";
 
-import {faHome, faList, faCog} from "@fortawesome/free-solid-svg-icons";
+import {faHome, faList, faCog, faShare} from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -17,9 +17,9 @@ export default function Navbar() {
         icon: faList
        },
        {
-        name: "Gallery",
-        path: "gallery",
-        icon: faCog
+        name: "Contact",
+        path: "contact",
+        icon: faShare
        },
     ]
 
