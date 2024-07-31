@@ -1,4 +1,5 @@
 import CustomImage from "./CustomImage"
+import ImproveHome from "./ImproveHome"
 
 export default function Home() {
     const images = [
