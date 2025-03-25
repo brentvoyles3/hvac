@@ -83,8 +83,11 @@ a{
     .gallery{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.75vw;
+        gap: 1.75vw;}
     }
+
+.section.improve-home{
+
 }
 
 .main{
